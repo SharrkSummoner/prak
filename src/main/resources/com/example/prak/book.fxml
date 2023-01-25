@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" prefHeight="200.0" prefWidth="760.0" style="-fx-border-color: #000000; -fx-border-radius: 50; -fx-border-width: 1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prak.BookController">
+   <children>
+      <Rectangle fill="#1f93ff00" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="760.0" />
+      <Label fx:id="bookTitle" layoutX="202.0" layoutY="15.0" text="Название">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="205.0" layoutY="94.0" text="Автор:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="bookAuthor" layoutX="258.0" layoutY="94.0" text="Автор">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="205.0" layoutY="60.0" text="Жанр:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="bookGenre" layoutX="265.0" layoutY="60.0" text="Жанр">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="205.0" layoutY="123.0" text="Издатель: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="bookPublisher" layoutX="279.0" layoutY="123.0" text="Издатель">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="205.0" layoutY="154.0" text="Осталось:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="bookCount" layoutX="280.0" layoutY="154.0" text="0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="498.0" layoutY="140.0" text="Цена:">
+         <font>
+            <Font name="System Italic" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="bookPrice" layoutX="594.0" layoutY="140.0" text="0">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="175.0" prefWidth="175.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="bookImage" fitHeight="175.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                     <image>
+                        <Image url="@../../../images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
